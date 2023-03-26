@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% block title %}Survey{% endblock %}
+{% block content %}
+<div class="container">
+<h1>{{surveys.title}}</h1>
+<h2>{{surveys.instructions}}</h2>
+<ul>
+<li>{{surveys.questions[cur].question}}</li>
+<fieldset>
+    <legend>Select a choice:</legend>
+
+    
+{% for choices in surveys.questions[cur].choices %}
+
+<div>
+<input type="radio" id={{choices}} name={{cur}} value={{choices}}>
+      <label for={{choices}}>{{choices}}</label>
+       </div>
+      {% endfor %}
+   
+</fieldset>
+</ul>
+
+<button id="sub_btn" >the action button</button>
+</div>
+<script src="/static/ind_questions.js"></script>
+{% endblock %}

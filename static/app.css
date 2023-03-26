@@ -1,0 +1,39 @@
+nav{
+    background-color: black;
+    overflow:hidden
+}
+nav a{
+    float: left;
+    color: teal;
+    padding: 14px 16px;
+    text-align: center;
+    border: 2px solid teal;
+    text-decoration: none;
+}
+nav a:hover{
+    background-color: teal;
+    border:2px solid black;
+    color:black;
+    
+}
+button{
+    display: block;
+    margin: 0 auto;
+    color:teal;
+    background-color: black;
+    border: 2px solid teal;
+    padding: 14px 16px;
+    text-align: center;
+}
+button:hover{
+    background-color: teal;
+    border:2px solid black;
+    color:black;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20px;
+}

@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block title %}Survey{% endblock %}
+{% block content %}
+<div class="container">
+<h1 class="center">{{surveys.title}}</h1>
+<h2 class="center">{{surveys.instructions}}</h2>
+<button onclick="window.location.href = '/questions';" class="center">Start Survey!</button>
+</div>
+{% endblock %}
